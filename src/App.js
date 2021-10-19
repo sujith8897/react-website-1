@@ -4,9 +4,12 @@ import './index.css';
 import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import Features from './Features';
+import Services from './Services';
 
 
 class App extends React.Component{
+
+
   render(){
     
     return(
@@ -14,6 +17,8 @@ class App extends React.Component{
         <Navbar />
         <HeroSection />
         <Features />
+        <Services />
+
       </React.Fragment>
     )
   }

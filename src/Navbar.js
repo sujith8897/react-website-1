@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
 
-    <nav className={navBg ? "shadow-lg fixed top-0 left-0 right-0 bg-white" : "fixed left-0 right-0 top-0  bg-white"}>
+    <nav className={navBg || click ? "shadow-lg fixed top-0 left-0 right-0 bg-white" : "fixed left-0 right-0 top-0  bg-white"}>
         <div className="container px-4 md:px-8 py-4 mx-auto">
             <div className="md:flex md:items-center md:justify-between">
                 <div className="flex items-center justify-between">
