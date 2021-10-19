@@ -31,7 +31,7 @@ export default function Footer(){
                 </div>
             </div>
             <hr/>
-            <div className="py-2">
+            <div className="py-2 flex flex-col justify-center items-center">
                 <h2 className="italic font-semibold">Created By Sujith</h2>
                 <div className="flex">
                     <a  href="https://twitter.com/sujithdusa" target="_blank" className="hover:text-white pointer">
