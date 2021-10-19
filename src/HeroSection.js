@@ -12,7 +12,7 @@ export default function HeroSection(){
                     <button className="bg-indigo-800 hover:bg-indigo-900 text-white w-full md:w-auto rounded px-10 py-3 text-xl md:text-lg font-semibold md:px-8 md:py-2">Get Started</button>
                 </div>
             </div>
-            <div className="hidden md:block  mr-40">
+            <div className="hidden md:block  lg:mr-40 md:bottom-0 flex items-center justify-center ">
                 <img src="hero.svg" style={{width:"780px"}} />
             </div>
         </div>

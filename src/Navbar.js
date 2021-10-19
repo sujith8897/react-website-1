@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
 
     <nav className={navBg || click ? "shadow-lg fixed top-0 left-0 right-0 bg-white" : "fixed left-0 right-0 top-0  bg-white"}>
-        <div className="container px-4 md:px-8 py-4 mx-auto">
+        <div className="px-4 md:px-10 lg:px-8 py-4 mx-0 ">
             <div className="md:flex md:items-center md:justify-between">
                 <div className="flex items-center justify-between">
                     <div className="text-xl font-semibold text-gray-700">
@@ -52,9 +52,9 @@ export default function Navbar() {
                         <a href="#" className="px-2 py-1 mx-2 mt-2 tracking-wider font-medium text-gray-700 transition-colors duration-200 font-bold transform rounded-md md:mt-0 dark:text-gray-200 hover:text-gray-500">Pricing</a>
                     </div>
 
-                    <div className="flex items-center mt-4 md:mt-0">
-                      <a href="#" className=" py-1 tracking-wider font-medium text-indigo-700 transition-colors duration-200 font-bold transform rounded-md md:mt-0 dark:text-gray-200 hover:text-indigo-500">Sign In</a>
-                      <button className="px-7 py-2.5 ml-4 bg-indigo-700 text-white tracking-wider font-semibold rounded ml-2 hover:bg-indigo-800">Sign Up</button>
+                    <div className="flex items-center mt-4 md:mt-0 md:-mx-10 lg:mx-0">
+                      <a href="#" className=" py-1 tracking-wider  text-indigo-700 transition-colors duration-200 font-bold transform rounded-md md:mt-0  hover:text-indigo-500">Sign In</a>
+                      <button className="px-7 py-2.5 ml-4 mr-10 bg-indigo-700 text-white tracking-wider font-semibold rounded ml-2 hover:bg-indigo-800">Sign Up</button>
                     </div>
                 </div>
             </div>
