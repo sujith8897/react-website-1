@@ -25,13 +25,13 @@ export default function Services(){
       ];
 
     return(
-        <div >
+        <div>
         {
             services.map(service => {
               return (
-                <div className={ service.idx%2==0 ? "flex flex-wrap md:flex-nowrap py-2" : "flex flex-wrap md:flex-nowrap py-2 flex-row-reverse" }>
+                <div className={ service.idx%2==0 ? "flex flex-wrap md:flex-nowrap bg-gray-100 shadow-md md:shadow-none mx-6 md:mx-0 py-8 md:py-2 mb-4 md:mb-0" : "flex flex-wrap md:flex-nowrap  py-8 md:py-2 shadow-md md:shadow-none mx-6 md:mx-0 bg-gray-100 mb-4 md:mb-0  flex-row-reverse " }>
                     <div className="md:w-1/2 px-6 md:px-20 flex flex-col  justify-center">
-                        <h1 className="text-2xl md:text-4xl tracking-tight font-bold pb-6">{ service.heading }</h1>
+                        <h2 className="text-2xl md:text-4xl tracking-tight font-bold pb-6">{ service.heading }</h2>
                         <p className="">{ service.descp }</p>
                         <a src={ service.link } className="py-10 text-lg text-lg font-semibold italic text-indigo-900">{ service.link }</a>
                     </div>

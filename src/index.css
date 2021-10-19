@@ -19,3 +19,9 @@ code {
 input{
   text-indent: 20px;
 }
+
+.shape{
+  border-radius: 100% 20% 100% 0% / 16% 78% 22% 84% 
+}
+
+
