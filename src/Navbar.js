@@ -4,15 +4,26 @@ import { useState } from "react";
 export default function Navbar() {
 
   const [click, setClick] = useState(false);
+  const [navBg, setNavBg] = useState(false);
 
   const handleClick = () =>{
     setClick(!click);
   }
+
+  const changeBackground = () =>{
+    if(window.scrollY > 30){
+      setNavBg(true);
+    }else{
+      setNavBg(false);
+    }
+  }
  
+  window.addEventListener('scroll', changeBackground);
+
   return (
 
-    <nav className="bg-white">
-        <div className="container px-8 py-4 mx-auto">
+    <nav className={navBg ? "shadow-lg fixed top-0 left-0 right-0 bg-white" : "fixed left-0 right-0 top-0  bg-white"}>
+        <div className="container px-4 md:px-8 py-4 mx-auto">
             <div className="md:flex md:items-center md:justify-between">
                 <div className="flex items-center justify-between">
                     <div className="text-xl font-semibold text-gray-700">
@@ -32,7 +43,7 @@ export default function Navbar() {
                 </div>
 
                 {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" --> */}
-                <div className={click? "flex-1 md:flex md:items-center md:justify-between border-2 border-purple-300 py-4 -mx-4 mt-2 sm:mt-0 sm:border-none sm:mx-0  rounded pl-4": "flex-1 md:flex md:items-center md:justify-between hidden"}>
+                <div className={click? "flex-1 md:flex md:items-center md:justify-between border-2 border-purple-300 pb-6  mt-2 sm:mt-0 sm:border-none sm:mx-0  rounded pl-4": "flex-1 md:flex md:items-center md:justify-between hidden"}>
                     <div className="flex flex-col -mx-4 md:flex-row md:items-center md:mx-8">
                         <a href="#" className="px-2 py-1 mx-2 mt-2 tracking-wider font-medium text-gray-700 transition-colors duration-200 font-bold transform rounded-md md:mt-0 md:text-center dark:text-gray-200 hover:text-gray-500">Products</a>
                         <a href="#" className="px-2 py-1 mx-2 mt-2 tracking-wider font-medium text-gray-700 transition-colors duration-200 font-bold transform rounded-md md:mt-0 dark:text-gray-200 hover:text-gray-500">Solutions</a>
