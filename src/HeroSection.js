@@ -2,10 +2,10 @@ export default function HeroSection(){
     return(
         <div className="md:flex md:pt-10 mt-16 justify-around">
             <div className="pt-20 flex  flex-col items-center">
-                <div className="px-10 md:px-20">
+                <div className="px-6 md:px-20">
                     <h1 className="text-5xl  md:text-6xl tracking-tight  font-bold">Get your finances right with <span className=" italic text-indigo-800">Pilot</span></h1>
                     <br/>
-                    <h4 className="text-xl md:w-96 tracking-tight leading-6">Pilot offers the best bookkeeping, tax, and CFO services for growing businesses.</h4>
+                    <p className="text-xl md:w-96 tracking-tight leading-6">Pilot offers the best bookkeeping, tax, and CFO services for growing businesses.</p>
                     <br/>
                     <input placeholder="Email" className="w-full md:w-80 h-12 rounded border border-black focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:border-0 focus:border-transparent "/>
                     <br/><br/>
